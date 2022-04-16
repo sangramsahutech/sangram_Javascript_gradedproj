@@ -1,0 +1,152 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0rem;
+    padding: 0rem;
+    background-color: white;
+}
+
+h2 {
+    color: blue;
+    font-size: 2rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+    align-items: center;
+    min-width: 15rem;
+}
+
+.addItem {
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#itembox1 {
+    width: 55rem;
+    border: 0.3rem solid whitesmoke;
+    border-top: 0.1rem solid whitesmoke;
+    border-right: 0.1rem solid whitesmoke;
+    height: 4rem;
+    border-radius: 2%;
+    font-size: 1.6rem;
+    min-width: 15rem;
+}
+
+#itembox1::placeholder {
+    opacity: .5;
+    padding-left: 5%;
+}
+
+#add-btn {
+    margin-left: 2.5rem;
+    height: 4rem;
+    width: 6rem;
+    color: white;
+    background-color: blue;
+    opacity: 0.6;
+    border: 0rem;
+    border-radius: 7%;
+    font-size: medium;
+    cursor: pointer;
+}
+
+#viewList {
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+.row-view {
+    width: 80rem;
+    align-items: center;
+    justify-content: center;
+    margin: 0rem;
+    margin-top: 0.5rem;
+    margin-left: 31rem;
+}
+
+.view-container {
+    display: inline-block;
+    margin: 0rem;
+    padding: 0rem;
+    width: 43rem;
+    border: 0rem;
+    font-size: 1.6rem;
+    background-color: white;
+}
+
+#edit-btn {
+    height: 6rem;
+    width: 5rem;
+    color: white;
+    background-color: green;
+    opacity: 0.6;
+    border: 0rem;
+    border-radius: 7%;
+    font-size: medium;
+    cursor: pointer;
+    margin: 0%;
+    margin-right: 2%;
+}
+
+#save-btn {
+    height: 6rem;
+    width: 5rem;
+    color: white;
+    background-color: blue;
+    opacity: 0.6;
+    border: 0rem;
+    border-radius: 7%;
+    font-size: medium;
+    cursor: pointer;
+    margin: 0%;
+    margin-right: 2%;
+}
+
+#delete-btn {
+    height: 6rem;
+    width: 7rem;
+    color: white;
+    background-color: red;
+    opacity: 0.7;
+    border: 0rem;
+    border-radius: 7%;
+    font-size: medium;
+    cursor: pointer;
+}
+
+#add-btn:hover,
+#edit-btn:hover,
+#save-btn:hover
+#delete-btn:hover {
+    opacity: 2;
+    transition: opacity 2s;
+}
+
+.selected {
+    color: blue;
+    border: 0.1rem solid blue;
+    border-left: 0rem;
+}
+
+@media(max-width:998px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media(max-width:768px) {
+    html {
+        font-size: 45%;
+    }
+}
